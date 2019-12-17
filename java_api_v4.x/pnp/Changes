@@ -1,0 +1,17 @@
+02/22/2007
+   TransactionEngine.java decodeString was changed to better handle
+   "&" in the middle of a string.  This should not require changes
+   to the merchants code.  decodeString does throw an additional
+   exception now but it is only a different wording.
+
+   TransactionEngine.java an api version number has been added.  Also
+   a method to retrieve it.  This version number is sent with each
+   transaction as javaapiversion.
+
+   testTransaction.java was updated to include shipname which is used
+   to test the handling of strange characters.
+
+   testTransaction.java now returns the version number during the
+   test.
+
+   javadocs have been updated go read them.
