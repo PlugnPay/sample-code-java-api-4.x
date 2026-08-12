@@ -22,6 +22,7 @@ public class testTransaction {
 
         Properties pairs = new Properties();
         pairs.put("publisher-name","pnpdemo");
+        pairs.put("publisher-password","your_remote_client_password");
         pairs.put("card-name","John Smith");
         pairs.put("shipname","test & test & . , - _ + = ; : [ { ( ' ` %26 %");
         pairs.put("card-number","4111111111111111");
@@ -31,10 +32,11 @@ public class testTransaction {
         pairs.put("card-zip","11788");
         pairs.put("card-country","US");
         pairs.put("card-amount","30.00");
-        pairs.put("card-exp","12/08");
+        pairs.put("card-exp","12/30");
         pairs.put("email","customer@you.com");
         pairs.put("card-type","Mastercard");
         pairs.put("publisher-email","me@mystoreaddress.com");
+        pairs.put("mode","auth");
 
 	// run the transaction and handle any exceptions 
         try {  
